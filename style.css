@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Main Container */
+body {
+    box-sizing: border-box;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #1e293b;
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+/* Description */
+p {
+    text-align: center;
+    color: #64748b;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* Text and Date Input */
+input {
+    display: block;
+    width: 400px;
+    max-width: 90%;
+    margin: 0 auto 14px auto;
+    padding: 14px 16px;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    background: white;
+}
+
+/* Input Focus */
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 6px rgba(37, 99, 235, 0.2);
+}
+
+/* Priority */
+select {
+    display: block;
+    width: 400px;
+    max-width: 90%;
+    margin: 0 auto 14px auto;
+    padding: 14px 16px;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+}
+
+/* Add Task */
+body > button {
+    display: block;
+    margin: 8px auto 20px auto;
+    padding: 13px 28px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+body > button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Task Count */
+#taskCount {
+    width: 650px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    font-weight: bold;
+    color: #475569;
+}
+
+/* Task List */
+ul {
+    width: 700px;
+    max-width: 95%;
+    margin: 25px auto;
+    padding: 0;
+}
+
+/* Task Card */
+li {
+    list-style: none;
+    background: white;
+    margin: 14px 0;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* Task Name */
+li .task-text {
+    flex: 1;
+    min-width: 120px;
+    font-size: 17px;
+    color: #334155;
+    font-weight: 500;
+}
+
+/* Priority */
+li .priority {
+    flex: none;
+    font-weight: bold;
+    padding: 5px 9px;
+    border-radius: 6px;
+}
+
+/* High */
+.priority.high {
+    color: #dc2626 !important;
+    background: #fee2e2;
+}
+
+/* Medium */
+.priority.medium {
+    color: #d97706 !important;
+    background: #fef3c7;
+}
+
+/* Low */
+.priority.low {
+    color: #16a34a !important;
+    background: #dcfce7;
+}
+
+/* Due Date */
+li .due-date {
+    flex: none;
+    color: #475569;
+    font-size: 14px;
+}
+
+/* Task Buttons */
+li button {
+    padding: 9px 13px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* Complete */
+li button:nth-of-type(1) {
+    background: #16a34a;
+}
+
+/* Edit */
+li button:nth-of-type(2) {
+    background: #f59e0b;
+}
+
+/* Delete */
+li button:nth-of-type(3) {
+    background: #dc2626;
+}
+
+/* Button Hover */
+li button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+/* Mobile Friendly */
+@media (max-width: 600px) {
+
+    body {
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    li {
+        align-items: flex-start;
+    }
+
+    li .task-text {
+        min-width: 100%;
+    }
+
+    li button {
+        padding: 8px 10px;
+    }
+}

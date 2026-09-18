@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Student Task Manager</h1>
+
+    <p>Manage your daily tasks easily</p>
+
+    <input type="text" placeholder="Enter your task">
+
+    <select id="priority">
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+    </select>
+
+    <input type="date" id="dueDate">
+
+    <button>Add Task</button>
+
+    <p id="taskCount">Total Tasks: 0 | Completed: 0 | Pending: 0</p>
+     
+    <button id="clearCompleted">Clear Completed Tasks</button>
+    <!-- Search Tasks -->
+    <input type="text" id="searchTask" placeholder="Search tasks...">
+
+    <!-- Filter by Priority -->
+    <select id="filterPriority">
+        <option value="All">All Priorities</option>
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+    </select>
+
+    <ul></ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
